@@ -16,9 +16,9 @@ Pod::Usage;
 
 Software Requirements:
 
-[trim_galore] (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)
-[Prinseq] (http://prinseq.sourceforge.net)
-[STAR] (https://github.com/alexdobin/STAR)
+[trim_galore] (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/);
+[Prinseq] (http://prinseq.sourceforge.net);
+[STAR] (https://github.com/alexdobin/STAR);
 [Samtools (1.0 or newer)] (http://www.htslib.org);
 [Pigz] (http://zlib.net/pigz/);
 
@@ -28,6 +28,7 @@ SAMPLE_NAME = Name of sample used
 REFERENCE_GENOME = Reference genome to align to
 READ_LENGTH = Length of reads
 MISMATCH = Number of mismatches to allow per read pair
+BAM_FILE = Final BAM file for processing
 
 ## Aligning and Filtering Data
 
@@ -58,3 +59,8 @@ Keep uniquely mapped reads
 	samtools index SAMPLE_NAME.STAR.pass2.Aligned.sortedByCoord.out.PP.UM.bam
 	
 ## Collect count data for modification inference:
+
+This step uses the perl script 'pileupAlleleExtractor_mito.pl' - 
+
+	perl pileupAlleleExtractor_mito.pl --Bam BAM_FILE --Out SAMPLE_NAME
+
