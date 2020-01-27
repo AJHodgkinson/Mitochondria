@@ -64,3 +64,28 @@ This step uses the perl script 'pileupAlleleExtractor_mito.pl' -
 
 	perl pileupAlleleExtractor_mito.pl --Bam BAM_FILE --Out SAMPLE_NAME
 
+USAGE
+
+perl pileupAlleleExtractor_mito.pl [options] --Fastq1 <forward_fastq_file> --Out <out_name>
+
+=head1 OPTIONS
+
+--Bam <bam_file> : File containing aligned data (Required)
+
+--Out <out_name> : Out name for file stub (Required)
+
+--MinQ <quality_threshold> : Phred score cut-off to include nucleatide in count (Optional)
+
+--RefFasta <path_to_ref_fasta> : Specify path to reference fasta sequence (all in one file) (Required if using STAR to map, or building a reference genome with Tophat2).
+
+--SamtoolsPath <path_to_samtools> : Use to specify path to samtools, default assumes it is in current path (Optional).
+
+--noBaq:  Use this flag with no arguments to turn of BAQ tool in Samtools
+
+---Perl Module Requirements--- 
+
+Getopt::Long
+
+Pod::Usage
+
+Samtools (v1.0 or newer)
