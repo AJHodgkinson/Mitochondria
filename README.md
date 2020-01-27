@@ -87,7 +87,9 @@ Pod::Usage
 
 ### OUTFILE
 
-This tool will create an outfile that can be used to count alternative alleles at each site:
+This tool will create an outfile that can be used to count alternative alleles at each site.
+
+Column Headers: Chromosome, Reference Position, Reference allele, Nucleotides(Forward strand upper case, reverese strand lower case):Nucleotide Counts.
 
 	chrM	55	T	A,C,G,T,a,c,g,t,*,-:0,0,1,431,0,0,0,23,0,0
 	chrM	56	A	A,C,G,T,a,c,g,t,*,-:453,0,0,0,19,0,0,0,0,0
