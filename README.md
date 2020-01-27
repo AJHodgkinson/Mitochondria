@@ -8,7 +8,7 @@ Ali, A.T., *et al*. 2019. Nuclear genetic regulation of human m1A/G mitochondria
 
 ## Dependencies
 
-Perl Module Requirements: 
+**Perl Module Requirements:** 
 
 Parallel::Loops;
 
@@ -16,7 +16,7 @@ Getopt::Long;
 
 Pod::Usage;
 
-Software Requirements:
+**Software Requirements:**
 
 [trim_galore] (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/);
 
@@ -28,7 +28,7 @@ Software Requirements:
 
 [Pigz] (http://zlib.net/pigz/);
 
-Aliases:
+**Aliases:**
 
 SAMPLE_NAME = Name of sample used;
 
@@ -76,7 +76,7 @@ Keep uniquely mapped reads
 
 perl pileupAlleleExtractor_mito.pl [options] --Fastq1 <forward_fastq_file> --Out <out_name>
 
-*OPTIONS:*
+**Options:**
 
 --Bam <bam_file> : File containing aligned data (Required)
 
@@ -90,7 +90,7 @@ perl pileupAlleleExtractor_mito.pl [options] --Fastq1 <forward_fastq_file> --Out
 
 --noBaq:  Use this flag with no arguments to turn of BAQ tool in Samtools
 
-*Perl Module Requirements:*
+**Perl Module Requirements:**
 
 Getopt::Long
 Pod::Usage
