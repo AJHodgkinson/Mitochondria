@@ -60,8 +60,6 @@ Keep uniquely mapped reads
 	
 ## Collect count data for modification inference:
 
-This step uses the perl script 'pileupAlleleExtractor_mito.pl' - 
-
 	perl pileupAlleleExtractor_mito.pl --Bam BAM_FILE --Out SAMPLE_NAME
 
 ### USAGE
@@ -86,4 +84,13 @@ perl pileupAlleleExtractor_mito.pl [options] --Fastq1 <forward_fastq_file> --Out
 
 Getopt::Long
 Pod::Usage
+
+### OUTFILE
+
+This tool will create an outfile that can be used to count alternative alleles at each site:
+
+	chrM	55	T	A,C,G,T,a,c,g,t,*,-:0,0,1,431,0,0,0,23,0,0
+	chrM	56	A	A,C,G,T,a,c,g,t,*,-:453,0,0,0,19,0,0,0,0,0
+	chrM	57	T	A,C,G,T,a,c,g,t,*,-:0,0,0,468,0,0,0,22,0,0
+
 
