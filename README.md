@@ -64,11 +64,11 @@ This step uses the perl script 'pileupAlleleExtractor_mito.pl' -
 
 	perl pileupAlleleExtractor_mito.pl --Bam BAM_FILE --Out SAMPLE_NAME
 
-USAGE
+### USAGE
 
 perl pileupAlleleExtractor_mito.pl [options] --Fastq1 <forward_fastq_file> --Out <out_name>
 
-=head1 OPTIONS
+*OPTIONS:*
 
 --Bam <bam_file> : File containing aligned data (Required)
 
@@ -82,10 +82,8 @@ perl pileupAlleleExtractor_mito.pl [options] --Fastq1 <forward_fastq_file> --Out
 
 --noBaq:  Use this flag with no arguments to turn of BAQ tool in Samtools
 
----Perl Module Requirements--- 
+*Perl Module Requirements:*
 
 Getopt::Long
-
 Pod::Usage
 
-Samtools (v1.0 or newer)
