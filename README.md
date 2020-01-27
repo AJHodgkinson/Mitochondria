@@ -11,7 +11,9 @@ Ali, A.T., *et al*. 2019. Nuclear genetic regulation of human m1A/G mitochondria
 Perl Module Requirements: 
 
 Parallel::Loops;
+
 Getopt::Long;
+
 Pod::Usage;
 
 Software Requirements:
@@ -19,16 +21,23 @@ Software Requirements:
 [trim_galore] (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/);
 
 [Prinseq] (http://prinseq.sourceforge.net);
+
 [STAR] (https://github.com/alexdobin/STAR);
+
 [Samtools (1.0 or newer)] (http://www.htslib.org);
+
 [Pigz] (http://zlib.net/pigz/);
 
 Aliases:
 
 SAMPLE_NAME = Name of sample used;
+
 REFERENCE_GENOME = Reference genome to align to;
+
 READ_LENGTH = Length of reads;
+
 MISMATCH = Number of mismatches to allow per read pair;
+
 BAM_FILE = Final BAM file for processing;
 
 ## Aligning and Filtering Data
